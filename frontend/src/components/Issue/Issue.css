@@ -1,0 +1,37 @@
+#isssue {
+  margin: auto;
+}
+
+.sel {
+  width: 35%;
+  margin: 10px auto;
+}
+
+.btn {
+  background-color: black;
+  color: white;
+  margin-top: 0.5rem;
+  /* font-weight:    bold; */
+}
+
+#results {
+  margin: 25px auto;
+  width: 60%;
+  border-radius: 8px;
+  /* background-color: rgb(111, 167, 219); */
+}
+
+.table td {
+  vertical-align: middle;
+}
+
+.issue-form {
+  margin-top: 5rem;
+}
+
+/* .btn-i { */
+/* background-color: grey; */
+/* color: black; */
+/* border-radius: 1rem; */
+/* padding: 5px 20px; */
+/* } */

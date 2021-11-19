@@ -1,0 +1,102 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: large;
+  font-weight: 500;
+  margin-top: 4rem;
+  /* justify-content: center; */
+}
+
+input {
+  width: 50%;
+  height: 2rem;
+  margin: 10px;
+}
+
+.add-btn {
+  margin-top: 10px;
+  /* text-transform: capitalize; */
+  font-weight: bold;
+  color: white;
+  border-radius: 2rem;
+  background-color: black;
+  padding: 10px 30px;
+}
+
+.card {
+  width: 200px;
+  height: 100px;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+.brw-btn {
+  padding: 4px 8px;
+  margin-top: 10px;
+  border-radius: 4px;
+  background-color: black;
+  color: white;
+}
+
+.login-div {
+  height: 400px;
+  width: 700px;
+  margin-left: 50rem;
+  margin-top: -25rem;
+  border-radius: 1rem;
+  color: black;
+  /* background-color: blanchedalmond; */
+  background-color: white;
+}
+.registration {
+  height: 400px;
+  width: 700px;
+  margin-left: 1rem;
+  margin-top: 10rem;
+  border-radius: 1rem;
+  color: black;
+  text-shadow: red;
+  background-color: white;
+}
+#signin-link {
+  color: black;
+}
+#login-button {
+  padding: 6px 20px;
+  background-color: black;
+  color: white;
+  border-radius: 3px;
+  margin-top: 6px;
+  position: absolute;
+  /* top: 50%; */
+
+  /* margin: 0; */
+  position: absolute;
+  /* top: 50%; */
+  left: 50%;
+  margin-left: 24rem;
+  /* -ms-transform: translate(-50%); */
+  transform: translate(-50%);
+}
+
+#reg-button {
+  padding: 6px 20px;
+  background-color: black;
+  color: white;
+  border-radius: 3px;
+  margin-top: 6px;
+  position: absolute;
+  /* top: 50%; */
+
+  /* margin: 0; */
+  position: absolute;
+  /* top: 50%; */
+  left: 50%;
+  /* margin-left: 24rem; */
+  /* -ms-transform: translate(-50%); */
+  transform: translate(-470%);
+}

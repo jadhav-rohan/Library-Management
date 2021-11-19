@@ -1,0 +1,56 @@
+.header {
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  color: white;
+  background-color: black;
+}
+.header-list {
+  color: green;
+}
+h1,
+h3 {
+  text-align: center;
+}
+a {
+  float: left;
+  list-style: none;
+  padding-top: 16px;
+  padding: 14px 16px;
+  color: white;
+  text-decoration: none;
+}
+
+/* a:visited {
+    color: skyblue;
+  } */
+
+a:active {
+  color: aqua;
+}
+
+.loginbtn {
+  border-radius: 4px;
+  padding: 10px 15px;
+  float: right;
+  margin-top: 4px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+a:hover {
+  background-color: white;
+  color: black;
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: black;
+  color: white;
+  display: block;
+}
+
+.form {
+  justify-content: center;
+}

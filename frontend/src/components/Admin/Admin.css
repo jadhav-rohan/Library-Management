@@ -1,0 +1,9 @@
+#login-button {
+  margin-left: 24rem;
+  margin-top: 0;
+  border-radius: 1rem;
+  /* float: center; */
+}
+.login-btn {
+  float: right;
+}
