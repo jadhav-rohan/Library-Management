@@ -71,6 +71,9 @@ function AddBooks() {
         <button className="add-btn" onClick={submit}>
           Submit
         </button>
+        <button>
+          <a href="/logout">Logout</a>
+        </button>
       </div>
     </div>
   );

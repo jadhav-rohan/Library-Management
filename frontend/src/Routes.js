@@ -10,6 +10,7 @@ import Issue from "./components/Issue/Issue";
 import AddBooks from "./components/AddBook/Addbook";
 import Signup from "./components/AddUser/AddUser";
 import Admin from "./components/Admin/Admin";
+import Logout from "./components/Admin/Logout";
 
 const Routes = () => {
   return (
@@ -23,6 +24,8 @@ const Routes = () => {
         <Route path="/addbook" exact component={AddBooks} />
         <Route path="/adduser" exact component={Signup} />
         <Route path="/login" exact component={Admin} />
+        <Route path="/logout" exact component={Logout} />
+        <Route path="/logout" exact component={Logout} />
       </Switch>
     </BrowserRouter>
   );

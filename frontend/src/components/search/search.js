@@ -10,7 +10,7 @@ class Search extends React.Component {
   };
 
   fetchData = () => {
-    var id = document.getElementById("id").value;
+    var sid = document.getElementById("id").value;
     this.setState({
       header: (
         <thead id="header">
@@ -24,7 +24,7 @@ class Search extends React.Component {
       books: [],
     });
 
-    fetch(`/api/students/${id}`)
+    fetch(`http://localhost:3002/api/students/${sid}`)
       .then((res) => res.json())
       .then((student) => {
         if (student.length > 0) {
@@ -55,7 +55,7 @@ class Search extends React.Component {
   };
 
   returnIt = (el) => {
-    fetch("/api/return", {
+    fetch("http://localhost:3002/api/return", {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({

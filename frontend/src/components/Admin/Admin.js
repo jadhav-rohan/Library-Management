@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Axios from "axios";
 import Nav from "../Nav/Nav";
 import "./Admin.css";
+import { Redirect } from "react-router";
 
 export default function Registration() {
   const [usernameReg, setUsernameReg] = useState("");
@@ -11,7 +12,7 @@ export default function Registration() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
-  const [loginStatus, setLoginStatus] = useState("");
+  const [loginStatus, setLoginStatus] = useState(false);
 
   Axios.defaults.withCredentials = true;
 
@@ -31,9 +32,9 @@ export default function Registration() {
       password: password,
     }).then((response) => {
       if (response.data.message) {
-        setLoginStatus(response.data.message);
+        setLoginStatus(false);
       } else {
-        setLoginStatus(response.data[0].username);
+        setLoginStatus(true);
       }
     });
   };
@@ -42,7 +43,7 @@ export default function Registration() {
     Axios.get("http://localhost:3002/api/login").then((response) => {
       console.log(response);
       if (response.data.loggedIn === true) {
-        setLoginStatus(response.data.user[0].username);
+        setLoginStatus(true);
       }
     });
   }, []);
@@ -110,6 +111,8 @@ export default function Registration() {
             {" "}
             Login{" "}
           </button>
+          {loginStatus && <Redirect to="/admin" />}
+          {/* <div>{loginStatus}</div> */}
         </div>
       </div>
     </div>
