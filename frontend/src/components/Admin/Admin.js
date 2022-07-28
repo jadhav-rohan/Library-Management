@@ -103,7 +103,7 @@ export default function Registration() {
             {" "}
             Login{" "}
           </button>
-          {loginStatus && <Redirect to="/admindashboard" />}
+          {loginStatus && <Redirect to="/addbook" />}
           {/* <div>{loginStatus}</div> */}
         </div>
       </div>
