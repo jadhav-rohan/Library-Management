@@ -11,6 +11,7 @@ import AddBooks from "./components/AddBook/Addbook";
 import Signup from "./components/AddUser/AddUser";
 import Admin from "./components/Admin/Admin";
 import Logout from "./components/Admin/Logout";
+import New from "./components/Admin/New";
 
 const Routes = () => {
   return (
@@ -26,6 +27,7 @@ const Routes = () => {
         <Route path="/login" exact component={Admin} />
         <Route path="/logout" exact component={Logout} />
         <Route path="/logout" exact component={Logout} />
+        <Route path="/admindashboard" exact component={New} />
       </Switch>
     </BrowserRouter>
   );

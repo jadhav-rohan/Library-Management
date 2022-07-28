@@ -41,7 +41,7 @@ const Signup = () => {
                 setUsername(e.target.value);
               }}
             />
-            <button /*type="submit"*/ id="login-button" onClick={submit}>
+            <button className="login-button" onClick={submit}>
               Register
             </button>
           </form>

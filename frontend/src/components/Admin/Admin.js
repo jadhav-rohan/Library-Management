@@ -7,7 +7,6 @@ import { Redirect } from "react-router";
 export default function Registration() {
   const [usernameReg, setUsernameReg] = useState("");
   const [passwordReg, setPasswordReg] = useState("");
-  //   const [id, setIdReg] = useState("");
 
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -59,13 +58,6 @@ export default function Registration() {
       <div className="registration">
         <h1>Registration</h1>
         <form className="form">
-          {/* <label>Admin Id</label>
-          <input
-            type="text"
-            onChange={(e) => {
-              setIdReg(e.target.value);
-            }}
-          /> */}
           <label>Username</label>
 
           <input
@@ -76,7 +68,7 @@ export default function Registration() {
           />
           <label>Password</label>
           <input
-            type="text"
+            type="password"
             onChange={(e) => {
               setPasswordReg(e.target.value);
             }}
@@ -111,7 +103,7 @@ export default function Registration() {
             {" "}
             Login{" "}
           </button>
-          {loginStatus && <Redirect to="/admin" />}
+          {loginStatus && <Redirect to="/admindashboard" />}
           {/* <div>{loginStatus}</div> */}
         </div>
       </div>

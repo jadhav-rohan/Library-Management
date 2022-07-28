@@ -10,7 +10,7 @@ const Nav = (props) => {
     <div>
       <div className="header">
         <ul className="headerlist">
-          <img src={images} className="logo" />
+          <img src={images} className="logo" alt="phot" />
           <a href="/">Home</a>
           <a href="/borrow">Issue Book</a>
           <a href="/return">Return</a>
